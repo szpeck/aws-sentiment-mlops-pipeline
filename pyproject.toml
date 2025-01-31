@@ -7,6 +7,15 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+transformers = "^4.48.2"
+torch = "^2.6.0"
+pandas = "^2.2.3"
+scikit-learn = "^1.6.1"
+pytest = "^8.3.4"
+black = "^25.1.0"
+boto3 = "^1.36.10"
+sagemaker = "^2.238.0"
+jupyterlab = "^4.3.5"
 
 
 [build-system]
