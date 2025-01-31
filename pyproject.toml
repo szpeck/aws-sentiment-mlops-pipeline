@@ -1,9 +1,11 @@
 [tool.poetry]
 name = "aws-sentiment-mlops-pipeline"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
-readme = "README.md"
+description = "MLOps pipeline for sentiment analysis using AWS SageMaker, Lambda, and API Gateway"
+authors = ["Szeth Peck <SzethPeck@gmail.com>"]
+packages = [
+   { include = "sentiment", from = "src" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -16,7 +18,6 @@ black = "^25.1.0"
 boto3 = "^1.36.10"
 sagemaker = "^2.238.0"
 jupyterlab = "^4.3.5"
-
 
 [build-system]
 requires = ["poetry-core"]
